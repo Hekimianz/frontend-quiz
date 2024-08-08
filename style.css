@@ -213,7 +213,7 @@ button {
   width: 100%;
   font-size: 1.8rem;
   font-weight: 500;
-  color: var(--dark-navy);
+  color: inherit;
   border: none;
   background-color: #fff;
   border-radius: 12px;
