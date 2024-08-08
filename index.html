@@ -21,9 +21,9 @@
   </head>
   <body>
     <header>
-      <div class="category__icon--wrapper hidden">
+      <div class="category__icon--wrapper">
         <img src="./assets/images/icon-accessibility.svg" alt="category" />
-        <h1>category</h1>
+        <h1>Accessibility</h1>
       </div>
       <div class="switch__cont">
         <img src="./assets/images/icon-sun-dark.svg" alt="sun" />
@@ -33,7 +33,7 @@
       </div>
     </header>
     <main>
-      <section class="menu__screen">
+      <section class="menu__screen hidden">
         <div class="menu__top">
           <h2>Welcome to the <span>Frontend Quiz</span></h2>
           <span>Pick a subject to get started.</span>
@@ -59,7 +59,39 @@
           </button>
         </div>
       </section>
-      <section class="question__screen"></section>
+      <section class="question__screen">
+        <div class="question__top">
+          <div class="question__wrapper">
+            <span class="question__number">Question 6 of 10</span>
+            <div class="question">
+              Which of these color contrast ratios defines the minimum WCAG 2.1
+              Level AA requirement for normal text?
+            </div>
+          </div>
+          <div class="progress__wrapper">
+            <div class="progress__bar"></div>
+          </div>
+        </div>
+        <div class="question__bot">
+          <button class="answer__btn active">
+            <span class="answer__letter">A</span>
+            4.5 : 1
+          </button>
+          <button class="answer__btn">
+            <span class="answer__letter">B</span>
+            3 : 1
+          </button>
+          <button class="answer__btn">
+            <span class="answer__letter">C</span>
+            2.5 : 1
+          </button>
+          <button class="answer__btn">
+            <span class="answer__letter">D</span>
+            5 : 1
+          </button>
+          <button class="submit__answer">Submit Answer</button>
+        </div>
+      </section>
       <section class="score__screen"></section>
     </main>
   </body>
