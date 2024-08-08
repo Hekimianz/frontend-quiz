@@ -33,7 +33,7 @@
       </div>
     </header>
     <main>
-      <section class="menu__screen hidden">
+      <section class="menu__screen">
         <div class="menu__top">
           <h2>Welcome to the <span>Frontend Quiz</span></h2>
           <span>Pick a subject to get started.</span>
@@ -89,10 +89,30 @@
             <span class="answer__letter">D</span>
             5 : 1
           </button>
-          <button class="submit__answer">Submit Answer</button>
+          <button class="submit__answer purple__btn">Submit Answer</button>
         </div>
       </section>
-      <section class="score__screen"></section>
+      <section class="score__screen">
+        <div class="score__top">
+          <h2>Quiz completed <span>You scored...</span></h2>
+        </div>
+        <div class="score__bot">
+          <div class="results__wrapper">
+            <div class="category__icon--wrapper">
+              <img
+                src="./assets/images/icon-accessibility.svg"
+                alt="category"
+              />
+              <h1>Accessibility</h1>
+            </div>
+            <div class="score">
+              <h3>8</h3>
+              <span>out of 10</span>
+            </div>
+          </div>
+          <button class="play__again purple__btn">Play Again</button>
+        </div>
+      </section>
     </main>
   </body>
 </html>
