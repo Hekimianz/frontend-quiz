@@ -19,5 +19,48 @@
     <link rel="stylesheet" href="style.css" />
     <script src="app.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="category__icon--wrapper hidden">
+        <img src="./assets/images/icon-accessibility.svg" alt="category" />
+        <h1>category</h1>
+      </div>
+      <div class="switch__cont">
+        <img src="./assets/images/icon-sun-dark.svg" alt="sun" />
+        <input type="checkbox" id="switch__checkbox" />
+        <label for="switch__checkbox" class="switcher"></label>
+        <img src="./assets/images/icon-moon-dark.svg" alt="sun" />
+      </div>
+    </header>
+    <main>
+      <section class="menu__screen">
+        <div class="menu__top">
+          <h2>Welcome to the <span>Frontend Quiz</span></h2>
+          <span>Pick a subject to get started.</span>
+        </div>
+        <div class="menu__bot">
+          <button class="category__btn html__btn">
+            <img src="./assets/images/icon-html.svg" alt="html brackets" />HTML
+          </button>
+          <button class="category__btn css__btn">
+            <img src="./assets/images/icon-css.svg" alt="paintbrush" />CSS
+          </button>
+          <button class="category__btn js__btn">
+            <img
+              src="./assets/images/icon-js.svg"
+              alt="javascript logo"
+            />Javascript
+          </button>
+          <button class="category__btn access__btn">
+            <img
+              src="./assets/images/icon-accessibility.svg"
+              alt="person"
+            />Accessibility
+          </button>
+        </div>
+      </section>
+      <section class="question__screen"></section>
+      <section class="score__screen"></section>
+    </main>
+  </body>
 </html>
