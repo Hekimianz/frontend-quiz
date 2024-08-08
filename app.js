@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
       scoreScreen.style.transform = "translateX(-100%)";
       window.scrollTo({
         top: 0,
-        behavior: "smooth", // You can use 'auto' for instant scrolling
+        behavior: "smooth",
       });
     });
   });
@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     scoreScreen.style.transform = "translateX(-200%)";
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // You can use 'auto' for instant scrolling
+      behavior: "smooth",
     });
   });
 
@@ -34,13 +34,13 @@ document.addEventListener("DOMContentLoaded", () => {
     questionScreen.style.display = "none";
     scoreScreen.style.display = "none";
 
-    menuScreen.style.display = "block";
+    menuScreen.style.display = "flex";
     menuScreen.style.transition = "none";
     menuScreen.style.transform = "translateX(100%)";
 
     menuScreen.offsetHeight;
 
-    menuScreen.style.transition = ".5s all";
+    menuScreen.style.transition = "1s all";
     menuScreen.style.transform = "translateX(0)";
 
     questionScreen.style.transform = "translateX(0)";
@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     scoreScreen.style.display = "flex";
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // You can use 'auto' for instant scrolling
+      behavior: "smooth",
     });
   });
 
@@ -74,8 +74,8 @@ function changeTheme(theme) {
   const resultsWrapper = scoreScreen.querySelector(".results__wrapper");
 
   if (theme) {
-    body.style.background =
-      "url(././assets/images/pattern-background-mobile-dark.svg)";
+    body.classList.add("dark");
+    body.classList.remove("light");
     body.style.backgroundColor = "var(--dark-navy)";
     body.style.color = "#fff";
     switchCont.querySelectorAll("img")[0].src =
@@ -85,13 +85,15 @@ function changeTheme(theme) {
     menuSpan.style.color = "var(--light-bluish)";
     btns.forEach((btn) => {
       btn.style.backgroundColor = "var(--navy)";
+      btn.style.boxShadow = "0px 16px 40px 0px rgba(49,62,81,0.14)";
     });
     progress.style.background = "var(--navy)";
     questionSpan.style.color = "var(--light-bluish)";
     resultsWrapper.style.background = "var(--navy)";
     resultsWrapper.querySelector("span").style.color = "var(--light-bluish)";
   } else if (!theme) {
-    body.style.background = "";
+    body.classList.remove("dark");
+    body.classList.add("light");
     body.style.backgroundColor = "";
     body.style.color = "";
     menuSpan.style.color = "";
@@ -102,6 +104,7 @@ function changeTheme(theme) {
       "./assets/images/icon-sun-dark.svg";
     switchCont.querySelectorAll("img")[1].src =
       "./assets/images/icon-moon-dark.svg";
+    progress.style.background = "";
     questionSpan.style.color = "";
     resultsWrapper.style.background = "";
     resultsWrapper.querySelector("span").style.color = "";
