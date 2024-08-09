@@ -21,9 +21,13 @@
   </head>
   <body class="light">
     <header>
-      <div class="category__icon--wrapper">
-        <img src="./assets/images/icon-accessibility.svg" alt="category" />
-        <h1>Accessibility</h1>
+      <div class="category__icon--wrapper hidden">
+        <img
+          src="./assets/images/icon-accessibility.svg"
+          class="category__icon"
+          alt="category"
+        />
+        <h1 class="category__text">Category</h1>
       </div>
       <div class="switch__cont">
         <img src="./assets/images/icon-sun-dark.svg" alt="sun" />
@@ -47,7 +51,7 @@
           </button>
           <button class="category__btn js__btn">
             <img
-              src="./assets/images/icon-js.svg"
+              src="./assets/images/icon-javascript.svg"
               alt="javascript logo"
             />Javascript
           </button>
@@ -73,21 +77,41 @@
           </div>
         </div>
         <div class="question__bot">
-          <button class="answer__btn active">
+          <button class="answer__btn">
             <span class="answer__letter">A</span>
-            4.5 : 1
+            <span class="answer__text"></span>
+            <img
+              src="./assets/images/icon-correct.svg"
+              alt="answer icon"
+              class="answer__result--icon hidden"
+            />
           </button>
           <button class="answer__btn">
             <span class="answer__letter">B</span>
-            3 : 1
+            <span class="answer__text"></span>
+            <img
+              src="./assets/images/icon-correct.svg"
+              alt="answer icon"
+              class="answer__result--icon hidden"
+            />
           </button>
           <button class="answer__btn">
             <span class="answer__letter">C</span>
-            2.5 : 1
+            <span class="answer__text"></span>
+            <img
+              src="./assets/images/icon-correct.svg"
+              alt="answer icon"
+              class="answer__result--icon hidden"
+            />
           </button>
           <button class="answer__btn">
             <span class="answer__letter">D</span>
-            5 : 1
+            <span class="answer__text"></span>
+            <img
+              src="./assets/images/icon-correct.svg"
+              alt="answer icon"
+              class="answer__result--icon hidden"
+            />
           </button>
           <button class="submit__answer purple__btn">Submit Answer</button>
         </div>

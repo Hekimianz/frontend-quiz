@@ -113,11 +113,26 @@ h1 {
 }
 
 .category__icon--wrapper img {
-  background-color: #f6e7ff;
   padding: 0.571rem;
-  border-radius: 4px;
+  border-radius: 8px;
   height: 4rem;
   width: 4rem;
+}
+
+.html {
+  background-color: #fff1e9;
+}
+
+.css {
+  background-color: #e0fdef;
+}
+
+.js {
+  background-color: #ebf0ff;
+}
+
+.access {
+  background-color: #f6e7ff;
 }
 
 .switch__cont {
@@ -281,6 +296,15 @@ button {
   line-height: 120%;
   font-size: 2rem;
   font-weight: 500;
+  transition: 0.2s all;
+}
+
+.answer__text {
+  transition: 0.2s all;
+}
+
+.answer__result--icon {
+  margin-left: auto;
 }
 
 .progress__wrapper {
@@ -296,6 +320,7 @@ button {
   height: 100%;
   background-color: var(--purple);
   border-radius: 104px;
+  transition: 0.5s all;
 }
 
 .answer__letter {
@@ -362,8 +387,26 @@ button {
   color: var(--grey-navy);
 }
 
+.answer__btn:hover .answer__letter {
+  color: var(--purple);
+  background-color: #f6e7ff;
+}
+
+.active:hover .answer__letter {
+  background-color: var(--purple);
+  color: #fff;
+}
+
+.purple__btn:hover {
+  background-color: #a729f586;
+}
+
 .hidden {
   display: none;
+}
+
+.changing {
+  opacity: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -527,6 +570,15 @@ button {
     padding: 9.9rem 14rem;
     height: fit-content;
   }
+
+  .category__icon--wrapper {
+    gap: 2.4rem;
+  }
+
+  .category__icon--wrapper img {
+    width: 5.6rem;
+    height: 5.6rem;
+  }
   .switch__cont {
     gap: 1.6rem;
     right: 14rem;
@@ -569,5 +621,13 @@ button {
   }
   .score__bot {
     width: 56.2rem;
+  }
+  .answer__btn {
+    gap: 3.2rem;
+    padding: 1.8rem 2rem;
+  }
+
+  .answer__letter {
+    border-radius: 8px;
   }
 }
